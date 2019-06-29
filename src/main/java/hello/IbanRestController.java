@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class GreetingController {
+public class IbanRestController {
 
     @RequestMapping(value = "/{ibans}", method = RequestMethod.GET)
     public boolean checkIban(@PathVariable("ibans") String iban) {
